@@ -409,15 +409,15 @@
         // Check if the Web Share API is supported
         if (navigator.share) {
             navigator.share({
-                title: 'Your shared title',
-                text: 'Your shared text',
-                url: 'https://www.example.com'
+                title: 'Jaime Maestre',
+                text: "JM CV's",
+                url: 'https://jmestre21.github.io/MyCV/'
             })
             .then(() => console.log('Shared successfully'))
             .catch((error) => console.error('Error sharing:', error));
         } else {
             // Fallback for browsers that do not support the Web Share API
-            copyToClipboard('https://www.example.com');
+            copyToClipboard('https://jmestre21.github.io/MyCV/'); // 
         }
     }
 
